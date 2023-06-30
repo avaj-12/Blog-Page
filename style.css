@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+.container{
+    border:1px solid black;
+    height:710px;
+    width:100%;
+    display:grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    "hd hd"
+    "side main";
+    overflow-x: hidden;
+
+    grid-gap:5px;
+}
+.box{
+    border:2px solid rgb(255, 255, 255);
+    
+}
+#side{
+    grid-area:side;
+}
+#main
+{
+    grid-area: main;
+}
+
+#header {
+    display: grid;
+    grid-area: hd;
+    grid-template-columns: 45% 40% 10%;
+    align-items: center;
+}
+#header a {
+    justify-self: start;
+    text-decoration: underline;
+    margin-left: 25px;
+}
+#header img {
+    width:35px;
+    height: 35px;
+    justify-self: end;
+    margin-right: 10px;;
+}
+
+#title {
+    justify-self: start;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.card{
+    border: 1px solid rgb(156, 151, 151);
+    width:80%;
+    height: 180px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    transition: box-shadow 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #b9b7b7;
+
+}
+
+.card:hover{
+    box-shadow: 0 0 8px 4px #b192e2;
+
+}
+
+.card h6{
+    color: rgb(0, 166, 255);
+    font-weight: bold;
+    padding:15px ;
+    font-size: medium;
+}
+
+.card h2{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.card p{
+    padding-top: 1px;
+    padding-left: 15px;
+    font-size: small;
+}
+.card a{
+    padding-left: 15px;
+    text-decoration: underline;
+    color: rgb(0, 166, 255);
+
+}
+
+.card1{
+    border: 1px solid rgb(156, 151, 151);
+    width:80%;
+    height: 180px;
+    margin-right: 25px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #b9b7b7;
+
+}
+.card1:hover{
+    box-shadow: 0 0 8px 4px #92e2b1;
+
+}
+.card1 h6{
+    color: rgb(0, 255, 21);
+    font-weight: bold;
+    padding:15px ;
+    font-size: medium;
+}
+
+.card1 h2{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.card1 p{
+    padding-top: 1px;
+    padding-left: 15px;
+    font-size: small;
+}
+.card1 a{
+    padding-left: 15px;
+    text-decoration: underline;
+    color: rgb(0, 166, 255);
+
+}
+

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+.container{
+    border:1px solid black;
+    height:710px;
+    width:100%;
+    display:grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 70% 30%;
+
+    grid-template-areas: 
+    "hd hd"
+    "main side";
+    overflow-x: hidden;
+
+    grid-gap:45px;
+}
+.box{
+    border:2px solid rgb(255, 255, 255);
+    
+}
+#side{
+    grid-area:side;
+    text-align:justify;
+}
+#main
+{
+    grid-area: main;
+    margin-left: 25px;
+    text-align:justify;
+    padding-bottom: 20px;
+
+}
+
+#header {
+    display: grid;
+    grid-area: hd;
+    grid-template-columns: 45% 40% 10%;
+    align-items: center;
+}
+#header a {
+    justify-self: start;
+    text-decoration: underline;
+    margin-left: 25px;
+}
+#header img {
+    width:35px;
+    height: 35px;
+    justify-self: end;
+    margin-right: 10px;;
+}
+
+#title {
+    justify-self: start;
+    margin: 0;
+    text-decoration: underline;
+    color: black;
+}
+
+.para2{
+    border:1px solid black;
+    background-color:#f9e7c6 ;
+    box-shadow: -5px 3px #d4bfff;
+}
+
+.heading{
+    padding-top: 20px;
+}
+
+i{
+    font-size: small;
+}
+.heading p{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.subheading{
+    padding-top:10px;
+}
+
+.subheading p{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.subheadingbox{
+    border:1px solid black;
+    background-color:#f9e7c6 ;
+    box-shadow: -5px 3px #d4bfff;
+    padding-top:20px;
+}
+
+.subheading2 p{
+    padding-top: 8px;
+    padding-bottom:15px;
+}
+
+.subheading2 ul{
+    padding-left: 50px;
+
+}
+
+.subheading2 ol{
+    padding-left:50px;
+}
+#last{
+    padding-bottom: 50px;
+}
+
+
+.older{
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    border:2px solid rgb(0, 166, 255);
+    color: rgb(0, 166, 255);
+    border-radius: 70px;
+}
+.newer{
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    border:2px solid gray;
+    color: rgb(106, 107, 108);
+    border-radius: 70px;
+}
+
+.about{
+    border:1px solid rgb(205, 192, 216);
+    margin-right: 90px;
+    height:200px;
+    background-color: rgb(228, 247, 255);
+}
+
+.about h2{
+    padding-left: 10px;
+    padding-top:2px;
+    padding-bottom: 5px;
+}
+.about p{
+    font-size: medium ;
+    padding-left: 8px;
+    padding-right:10px;
+}
+
+.archives{
+    margin-right: 90px;
+    height:220px;
+    padding-top:40px;
+}
+.elsewhere{
+    margin-right: 90px;
+    height:200px;
+    padding-top:80px;
+}
